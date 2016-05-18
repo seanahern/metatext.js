@@ -9,9 +9,15 @@ module.exports = (function() {
   };
 
   return function(to_parse, params) {
+
     var raw = read(to_parse) || to_parse;
-    var parsed = matter(raw);
-    return { metadata: parsed.data, content: parsed.content };
+    var matches = /^---([\s\S]+)---([\s\S]+)/m.exec(raw);
+
+    if (!matches) {
+      throw "parse error";
+    }
+
+    return { metadata: matches[1], content: matches[2] };
   };
 
 })();
