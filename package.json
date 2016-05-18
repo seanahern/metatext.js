@@ -1,0 +1,33 @@
+{
+  "name": "metatext.js",
+  "version": "0.0.1",
+  "description": "Node port of the lightweight jekyll-inspired metadata parser https://github.com/jguest/metatext ",
+  "main": "./src/metatext",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanahern/metatext.js.git"
+  },
+  "keywords": [
+    "metatext",
+    "parser",
+    "node",
+    "yaml",
+    "jekyll"
+  ],
+  "author": "Sean Ahern",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanahern/metatext.js/issues"
+  },
+  "homepage": "https://github.com/seanahern/metatext.js#readme",
+  "devDependencies": {
+    "fs": "0.0.2",
+    "gray-matter": "^2.0.2"
+  }
+}
