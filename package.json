@@ -28,6 +28,6 @@
   "homepage": "https://github.com/seanahern/metatext.js#readme",
   "devDependencies": {
     "fs": "0.0.2",
-    "gray-matter": "^2.0.2"
+    "js-yaml": "^3.6.1"
   }
 }

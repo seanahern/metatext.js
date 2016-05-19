@@ -1,4 +1,7 @@
 var metatext = require("../src/metatext");
 
-console.log(metatext("./example/content.md"));
+metatext("./example/content.md", function(data, content) {
+  console.log(data);
+  console.log(content);
+});
 
