@@ -1,6 +1,6 @@
 {
   "name": "metatext.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node port of the lightweight jekyll-inspired metadata parser https://github.com/jguest/metatext ",
   "main": "./src/metatext",
   "directories": {
