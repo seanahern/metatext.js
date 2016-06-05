@@ -1,13 +1,13 @@
 {
   "name": "metatext.js",
-  "version": "0.0.4",
-  "description": "Node port of the lightweight jekyll-inspired metadata parser https://github.com/jguest/metatext ",
+  "version": "0.0.5",
+  "description": "YAML metadata parser",
   "main": "./src/metatext",
   "directories": {
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha tests"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/seanahern/metatext.js#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
     "fs": "0.0.2",
-    "js-yaml": "^3.6.1"
+    "js-yaml": "^3.6.1",
+    "mocha": "^2.5.3"
   }
 }
