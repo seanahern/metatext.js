@@ -23,12 +23,17 @@ module.exports = (function() {
   */
 
   return function(to_parse, callback) {
-
+    if(to_parse == null || to_parse == undefined || typeof to_parse == "function") {
+      throw new Error("No file path provided.");
+    }
+    if(callback == null || callback == undefined) {
+      throw new Error("No callback function provided.");
+    }
     var raw = read(to_parse) || to_parse,
         matches = /^---([\s\S]+)---([\s\S]+)/m.exec(raw);
 
     if (!matches) {
-      throw "parse error";
+      throw new Error("No YAML markup found in the file.");
     }
 
     var data = metadata(matches[1]),

@@ -1,4 +1,7 @@
-# metatext.js [![npm version](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/metatext.js)
+# metatext.js
+
+[![npm version](https://img.shields.io/npm/v/metatext.js.svg)](https://www.npmjs.com/package/metatext.js)
+[![travis build](https://img.shields.io/travis/seanahern/metatext.js.svg)](https://travis-ci.org/seanahern/metatext.js)
 
 Node port of [this lightweight Jekyll-inspired metadata parser](https://github.com/jguest/metatext) written in Ruby.
 
